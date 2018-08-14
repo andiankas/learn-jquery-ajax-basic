@@ -1,3 +1,6 @@
 # LEARN JQUERY and AJAX
 
-Hi! this repository is just to learning jquery and ajax.
+Hi! this repository is just documentation for learn jquery and ajax. And it's Basic Level.
+-keep learning anything-
+
+Thankyou.
