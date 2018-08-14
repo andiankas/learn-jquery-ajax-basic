@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- title -->
+		<title>Belajar Jquery Ajax</title>
+		<!-- style -->
+		<style type="text/css">
+			#content{
+				text-align: center;
+				margin: auto;
+			}
+			.kotak{
+				width: 100px;
+				height: 100px;
+				border: 1px;
+				background: lightblue;
+
+			}
+		</style>
+		<!-- jquery -->
+		<script src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$("#status").keyup(function()
+				{
+					var status = $("#status").val();
+					$.ajax({
+						type: "POST",
+						url: "04-print-1.php",
+						data: "status="+status,
+						success: function(html){
+							$("#berhasil").html(html);
+						}
+					});
+				});
+
+			});
+
+		</script>	
+	</head>
+	<body id="content">
+		
+		<h1>04. JQUERY and AJAX - PART I</h1><br><br>
+		
+		<div>
+			<label for="status">Status : </label><br>
+			<textarea id="status" cols="30" rows="5"></textarea>
+		</div>
+
+		<div id="berhasil"></div>
+
+	</body>
+</html>
