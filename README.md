@@ -1,2 +1,3 @@
-# learn-jquery-ajax-basic
-Just want to learn jquery ajax
+# LEARN JQUERY and AJAX
+
+Hi! this repository is just to learning jquery and ajax.
