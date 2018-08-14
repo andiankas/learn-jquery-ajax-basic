@@ -14,12 +14,39 @@
 		<script src="jquery-3.3.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				// trigger
+				// button
+				$("#button").click(function() {
+					$("#text").hide();
+				});
 				
+				$("#button").dblclick(function() {
+					$("#text").show();
+				});
+				// end button
+
+				// combobox
+				$("#combobox").change(function() {
+					var nilai = $("#combobox").val();
+					alert("Kamu memilih " +nilai);
+				});
+				// end combobox
 			});
+
 		</script>	
 	</head>
 	<body id="content">
 		
+
+		<button id="button">Send</button>
+		<div id="text">Selamat Pagi</div>
+		
+		<br><br>
+
+		<select id="combobox">
+			<option disabled selected>-Pilih-</option>
+			<option value="1">Sample 1</option>
+			<option value="2">Sample 2</option>
+			<option value="3">Sample 3</option>
+		</select>
 	</body>
 </html>
